@@ -1,3 +1,8 @@
+/*
+ * Programa para receber entradas de sensores de forma diaria
+ */
+
+
 import java.util.Scanner; //bibliotecas para habilitar o array para pilha.
 import java.util.*; 
 import java.util.LinkedList; //para fila
@@ -89,7 +94,7 @@ class Temperatura extends Sensores {
     Queue<String> temperatura
             = new LinkedList<>();
 
-    int tamanho = 24*60/30;
+    int tamanho = 24*60/30; //numero de dados catalogados a cada 30 minutos.
     
   
   
@@ -145,7 +150,7 @@ class Temperatura extends Sensores {
 class umidade extends Sensores {
 
     List<String> umidade = new ArrayList<>();
-    int tamanho = 24*60/30;
+    int tamanho = 24*60/30; //numero de dados catalogados a cada 30 minutos.
     
         
 
